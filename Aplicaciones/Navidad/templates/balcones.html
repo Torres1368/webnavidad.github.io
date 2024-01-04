@@ -1,0 +1,59 @@
+{% extends "./header.html" %}
+{% load static %}
+
+{% block contenido %}
+<link rel="stylesheet" href="{% static 'css/estilos1.css' %}">
+
+  <body>
+    <h1 class="fw-bold">Desde los balcones del Teatro Español</h1>
+    <br>
+    <h3 class="text-warning fw-bold">Musica en la ciudad</h3>
+    <br>
+    <p>La Navidad llena calles, plazas y balcones de jazz, góspel, flamenco y otros géneros conectados con la espiritualidad. Los artistas ofrecen repertorios especiales que nos conectan con el espíritu de celebración y comunión de estas fiestas. Además, en esta epifanía que dedicamos a los mayores, un coro de voces blancas recorre la ciudad para honrar a esos abuelos que, con su sabiduría y generosidad están siempre para los demás.</p>
+    <br>
+    <div class="d-flex">
+      <button class="btn btn-outline-primary texto-derecha " onclick="#">Vista Completa</button>
+      <button class="btn btn-outline-primary texto-derecha" onclick="#'">Vista Listado</button>
+      </div>
+  <br>
+  <div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="{% static 'img/teatro2.jpg' %}" class="card-img-top" alt="Imagen 1">
+
+        <div class="card-body">
+          <a href="https://www.navidadmadrid.com/es/evento/rebeca-rods-y-black-light-gospel-choir">
+          <h5>Rebeca Rods y Black Light Gospel Choir</h5>
+          </a>
+          <p class="card-text">Gospel Christmas</p>
+          <p class="card-text">Martes 19 de diciembre, 21h</p>
+          <p class="text-danger"class="card-text">Finalizado</p>
+          <p class="fw-bold"class="card-text">Teatro Español</p>
+          <p class="text-primary"class="card-text">MÚSICA</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="{% static 'img/teatro1.jpg' %}" class="card-img-top" alt="Imagen 2">
+        <div class="card-body">
+          <a href="https://www.navidadmadrid.com/es/evento/maria-mezcle">
+          <h5>Amazon & Cibeles sobre hielo</h5>
+          </a>
+          <p class="card-text">María Mezcle</p>
+          <p class="card-text">De Madrid al cielo en Navidad</p>
+          <p class="card-text">Miércoles 20 de diciembre, 21h</p>
+          <p class="text-danger"class="card-text">Finalizado</p>
+          <p class="fw-bold"class="card-text">Teatro Español</p>
+          <p class="text-primary"class="card-text">MÚSICA</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+
+{% endblock %}

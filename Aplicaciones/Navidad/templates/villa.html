@@ -1,0 +1,156 @@
+{% extends "./header.html" %}
+{% load static %}
+
+{% block contenido %}
+<link rel="stylesheet" href="{% static 'css/estilos1.css' %}">
+
+<main>
+    <style>
+
+
+        /* alineacion */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 30px; /* Espacio entre cards */
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .grid-item {
+            flex: 0 0 calc(33.3% - 6px); /* ancho cards */
+            border-radius: 10px; /* esquinas */
+            overflow: hidden; /* Para asegurar que el contenido no sobresalga del borde redondeado */
+        /* Otros estilos para el card */
+        }
+    </style>
+
+    <div class="container2 main pt-4" id="rc-contenido">
+        <div class="busqueda pb-4">
+            <div class="resultado-texto">
+                <h1 class="titulo d-flex px-4">Desde el balcón de Casa de la Villa</h1>
+            </div>
+            <div class="descripcion py-2 px-4">
+                <p class="modoh2"><span style="color:#cc9933;">Música en la ciudad</span></p>
+                <p>La Navidad llena calles, plazas y balcones de jazz, góspel, flamenco y otros géneros conectados con la espiritualidad. Los artistas ofrecen repertorios especiales que nos conectan con el espíritu de celebración y comunión de estas fiestas. Además, en esta epifanía que dedicamos a los mayores, un coro de voces blancas recorre la ciudad para honrar a esos abuelos que, con su sabiduría y generosidad están siempre para los demás.</p>
+            </div>
+            <div class="container2 body"></div>
+            <div class="container2">
+                <ul class="vista viewmode list-inline ">
+                    <li><a href="#" data-view-mode="full" id="viewFull" class="viewmodetab active" data-once="viewmode-tab-behaviour">Vista completa</a></li>
+                    <li><a href="#" data-view-mode="list" id="viewList" class="viewmodetab" data-once="viewmode-tab-behaviour">Vista listado</a></li>
+                </ul>
+            </div>
+
+            <script>
+                $(".viewmodetab").click(function () {
+                    $(".viewmodetab").removeClass("active");
+                    $(this).addClass("active");
+                    cookieVista($(this).attr('id'));
+                });
+
+                $(document).ready(function () {
+                    cookieVista();
+                });
+            </script>
+
+            <!-- Listado de resultados -->
+            <div id="cargando" class="mx-4 pb-2" style="display:none">Cargando eventos<span>.</span><span>.</span><span>.</span></div>
+            <ol class="card-container">
+                <li class="grid-item " id="bevento77">
+                    <!-- Contenido del primer card -->
+                    <!-- Ajusta los enlaces, imágenes, texto y datos según tus necesidades -->
+                    <div class="basic addheight">
+                        <div class="basic2">
+                            <div class="card-img-top img-busqueda" id="imgLite58">
+                                <!-- Contenido del card -->
+                                <div class="imagen-busqueda">
+                                    <a href="/es/evento/gospel-ladies" title="ir al evento" class="eventolite finalizado">
+                                        <div class="txt-over">
+                                            <img src="https://estaticos.navidadmadrid.com/uploads/media/eventos/0001/01/thumb_57_eventos_medium.jpeg"
+                                                data-src="https://estaticos.navidadmadrid.com/uploads/media/eventos/0001/01/thumb_57_eventos_medium.jpeg"
+                                                width="750" height="507" class="programa img-fluid" alt="">
+                                        </div>
+                                        <h2 class="mb-0 viewFull"><span>Gospel Ladies</span></h2>
+                                    </a>
+                                </div>
+                                <p class="pb-3 mb-0 subtitulo">Artistas: Cecilia Bercovich, Marina Pardo y Miguel Huertas</p>
+                                <div class="d-flex justify-content-start align-items-center">
+                                    <div class="fecha-hora">
+                                        <p>Miercoles 27 de diciembre<span class="d-inline-block">
+                                                <time datetime="20:00">,&nbsp;20h</time>
+                                            </span></p>
+                                    </div>
+                                </div>
+                                <div class="lugar mt-1">
+                                    <ul class="d-flex flex-column">
+                                        <li style="opacity: 1;">
+                                            Casa de La Villa. Ayuntamiento de Madrid
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Fin del card -->
+                        </div>
+                    </div>
+                    <!-- Fin del primer card -->
+                </li>
+                <li class="grid-item">
+                    <!-- Contenido del segundo card -->
+                    <!-- Ajusta los enlaces, imágenes, texto y datos según tus necesidades -->
+                    <div class="basic addheight">
+                        <div class="basic2">
+                            <div class="card-img-top img-busqueda" id="imgLite71">
+                                <div class="imagen-busqueda">
+                                    <a href="/es/evento/roni-di-capo" title="ir al evento" class="eventolite finalizado">
+                                        <div class="txt-over">
+                                            <img src="https://estaticos.navidadmadrid.com/uploads/media/eventos/0001/01/thumb_65_eventos_medium.jpg"
+                                                data-src="https://estaticos.navidadmadrid.com/uploads/media/eventos/0001/01/thumb_65_eventos_medium.jpg"
+                                                width="5646" height="3764" class="programa img-fluid" alt="">
+                                        </div>
+                                        <h2 class="mb-0 viewFull"><span>Roni di Capo</span></h2>
+                                    </a>
+                                </div>
+                                <p class="pb-3 mb-0 subtitulo">Tradiciones</p>
+                                <div class="d-flex justify-content-start align-items-center">
+                                    <div class="fecha-hora">
+                                        <p>Jueves 28 de diciembre<span class="d-inline-block">
+                                                <time datetime="18:30">,&nbsp;20:20h</time>
+                                            </span></p>
+                                    </div>
+                                </div>
+                                <div class="lugar mt-1">
+                                    <ul class="d-flex flex-column">
+                                        <li style="opacity: 1;">
+                                            Plaza de la Villa
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Fin del segundo card -->
+                        </div>
+                    </div>
+                </li>
+            </ol>
+            <!-- Fin del listado de cards -->
+            <!-- Resto de tu contenido aquí -->
+        </div>
+        <noscript>
+            <style>
+                .grid li.grid-item .infolittle {
+                    opacity: 1;
+                }
+
+                .grid li a.imagen {
+                    height: 150px;
+                    overflow: hidden;
+                    display: inline-block!important;
+                    border: 0;
+                }
+            </style>
+        </noscript>
+    </div>
+</main>
+{% endblock %}

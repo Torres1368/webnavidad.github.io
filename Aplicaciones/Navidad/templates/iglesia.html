@@ -1,0 +1,153 @@
+{% extends "./header.html" %}
+{% load static %}
+
+{% block contenido %}
+<link rel="stylesheet" href="{% static 'css/estilos1.css' %}">
+
+<main>
+    <style>
+
+
+        /* alineacion */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 30px; /* Espacio entre cards */
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .grid-item {
+            flex: 0 0 calc(33.3% - 6px); /* ancho cards */
+            border-radius: 10px; /* esquinas */
+            overflow: hidden; /* Para asegurar que el contenido no sobresalga del borde redondeado */
+        /* Otros estilos para el card */
+        }
+    </style>
+
+    <div class="container2 main pt-4" id="rc-contenido">
+        <div class="busqueda pb-4">
+            <div class="resultado-texto">
+                <h1 class="titulo d-flex px-4">Real Iglesia Parroquial de San Ginés</h1>
+            </div>
+            <div class="descripcion py-2 px-4">
+                <p class="modoh2"><span style="color:#cc9933;">Música en las iglesias</span></p>
+                <p>Tradición, espiritualidad y cultura se unen en este ciclo que ya es un clásico. Las iglesias de Madrid abren otro año más sus puertas a la programación de Navidad y acogen conciertos de primeras figuras del flamenco, la música clásica y el fado.</p>
+            </div>
+            <div class="container2 body"></div>
+            <div class="container2">
+                <ul class="vista viewmode list-inline ">
+                    <li><a href="#" data-view-mode="full" id="viewFull" class="viewmodetab active" data-once="viewmode-tab-behaviour">Vista completa</a></li>
+                    <li><a href="#" data-view-mode="list" id="viewList" class="viewmodetab" data-once="viewmode-tab-behaviour">Vista listado</a></li>
+                </ul>
+            </div>
+
+            <script>
+                $(".viewmodetab").click(function () {
+                    $(".viewmodetab").removeClass("active");
+                    $(this).addClass("active");
+                    cookieVista($(this).attr('id'));
+                });
+
+                $(document).ready(function () {
+                    cookieVista();
+                });
+            </script>
+
+            <!-- Listado de resultados -->
+            <div id="cargando" class="mx-4 pb-2" style="display:none">Cargando eventos<span>.</span><span>.</span><span>.</span></div>
+            <ol class="card-container">
+                <li class="grid-item " id="bevento77">
+                    <!-- Contenido del primer card -->
+                    <!-- Ajusta los enlaces, imágenes, texto y datos según tus necesidades -->
+                    <div class="basic addheight">
+                        <div class="basic2">
+                            <div class="card-img-top img-busqueda" id="imgLite77">
+                                <!-- Contenido del card -->
+                                <div class="imagen-busqueda">
+                                    <a href="/es/evento/palmas-de-belen-un-regalo" title="ir al evento" class="eventolite">
+                                        <div class="txt-over">
+                                            <img src="https://estaticos.navidadmadrid.com/uploads/media/eventos/0001/01/thumb_481_eventos_medium.jpg"
+                                                data-src="https://estaticos.navidadmadrid.com/uploads/media/eventos/0001/01/thumb_481_eventos_medium.jpg"
+                                                width="750" height="507" class="programa img-fluid" alt="">
+                                        </div>
+                                        <h2 class="mb-0 viewFull"><span>Palmas de Belén: un regalo</span></h2>
+                                    </a>
+                                </div>
+                                <p class="pb-3 mb-0 subtitulo">Artistas: Cecilia Bercovich, Marina Pardo y Miguel Huertas</p>
+                                <div class="d-flex justify-content-start align-items-center">
+                                    <div class="fecha-hora">
+                                        <p>Martes 2 de enero<span class="d-inline-block">
+                                                <time datetime="18:30">,&nbsp;18.30h</time>
+                                            </span></p>
+                                    </div>
+                                </div>
+                                <div class="lugar mt-1">
+                                    <ul class="d-flex flex-column">
+                                        <li style="opacity: 1;">
+                                            Real Iglesia Parroquial de San Ginés
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="grid-item">
+                    <!-- Contenido del segundo card -->
+                    <!-- Ajusta los enlaces, imágenes, texto y datos según tus necesidades -->
+                    <div class="basic addheight">
+                        <div class="basic2">
+                            <div class="card-img-top img-busqueda" id="imgLite78">
+                                <div class="imagen-busqueda">
+                                    <a href="/es/evento/kambrass-quintet" title="ir al evento" class="eventolite">
+                                        <div class="txt-over">
+                                            <img src="https://estaticos.navidadmadrid.com/uploads/media/eventos/0001/01/thumb_71_eventos_medium.jpg"
+                                                data-src="https://estaticos.navidadmadrid.com/uploads/media/eventos/0001/01/thumb_71_eventos_medium.jpg"
+                                                width="5646" height="3764" class="programa img-fluid" alt="">
+                                        </div>
+                                        <h2 class="mb-0 viewFull"><span>KamBrass Quintet</span></h2>
+                                    </a>
+                                </div>
+                                <p class="pb-3 mb-0 subtitulo">Tradiciones</p>
+                                <div class="d-flex justify-content-start align-items-center">
+                                    <div class="fecha-hora">
+                                        <p>Miércoles 3 de enero<span class="d-inline-block">
+                                                <time datetime="18:30">,&nbsp;18.30h</time>
+                                            </span></p>
+                                    </div>
+                                </div>
+                                <div class="lugar mt-1">
+                                    <ul class="d-flex flex-column">
+                                        <li style="opacity: 1;">
+                                            Real Iglesia Parroquial de San Ginés
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Fin del segundo card -->
+                        </div>
+                    </div>
+                </li>
+            </ol>
+
+        </div>
+        <noscript>
+            <style>
+                .grid li.grid-item .infolittle {
+                    opacity: 1;
+                }
+
+                .grid li a.imagen {
+                    height: 150px;
+                    overflow: hidden;
+                    display: inline-block!important;
+                    border: 0;
+                }
+            </style>
+        </noscript>
+    </div>
+</main>
+{% endblock %}

@@ -1,0 +1,164 @@
+{% extends "./header.html" %}
+{% load static %}
+
+{% block contenido %}
+<link rel="stylesheet" href="{% static 'css/estilos1.css' %}">
+
+
+<main>
+
+    <div class="container2 main pt-4" id="rc-contenido">
+
+        <div class="busqueda pb-4">
+
+        <div class="resultado-texto">
+
+                <h1 class="titulo d-flex px-4">Cabalgata</h1>
+            </div>
+
+
+
+
+
+                    <!-- Listado de resultados -->
+
+            <div id="cargando" class="mx-4 pb-2" style="display:none">Cargando eventos<span>.</span><span>.</span><span>.</span></div>
+
+            <ol class="grid effect-2 resultados mt-lg-4" id="grid" style="position: relative; height: 425.133px;">
+
+                                        <li class="grid-item " id="bevento84" style="position: absolute; left: 0%; top: 0px; opacity: 1;">
+
+
+
+
+
+
+
+
+
+                        <div class="basic ">
+
+                    <div class="basic2">
+                        <!--imagen-->
+                        <div class="card-img-top img-busqueda" id="imgLite84">
+
+                            <div class="imagen-busqueda">
+
+                            <a href="/es/evento/cabalgata-de-reyes" title="ir al evento" class="eventolite ">
+                            <div class="txt-over ">    <img src="https://estaticos.navidadmadrid.com/uploads/media/eventos/0001/01/thumb_153_eventos_medium.jpg" data-src="https://estaticos.navidadmadrid.com/uploads/media/eventos/0001/01/thumb_153_eventos_medium.jpg" width="2048" height="1367" class="programa img-fluid" alt="">
+
+
+
+                                                        </div>
+
+                            <h2 class="my-3 viewFull"><span>Cabalgata de Reyes</span></h2>
+                            </a>
+                            </div>
+
+
+
+
+                            <div class="d-flex justify-content-start align-items-center">
+
+                                                                                <div class="fecha-hora ">
+    <p>Viernes 5 de enero<span class="d-inline-block">            <time datetime="18:30">,&nbsp;18.30h
+                    </time></span></p>
+
+
+                                </div>
+                                                    </div>
+
+
+
+
+                        </div>
+                    </div>
+                    <div class="final  pt-2  pb-0">
+                    <!--Categorias-->
+                        <div class="categ">
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <ul class="cat">
+
+                                                <li style="opacity: 1;">
+                                                                                                                                                        <a href="/es/categoria/cabalgata"><span>CABALGATA</span></a>
+
+                                                </li>
+
+                                                                                                                </ul>
+
+                                            </div>
+
+                                            <ul class="accesibilidad">
+                                                                            <li class="accesibilidad_movilidad-reducida" style="opacity: 1;">
+                                <span class="icon-silladeruedas ico-accesible"></span>
+                                <span class="d-none">
+                                    Movilidad reducida
+                                </span>
+                            </li>
+                                                                                                    <li class="accesibilidad_lengua-de-signos" style="opacity: 1;">
+                                <span class="icon-lenguadesignos ico-accesible"></span>
+                                <span class="d-none">
+                                    Lengua de signos
+                                </span>
+                            </li>
+                                                                                                    <li class="accesibilidad_audiodescripcion" style="opacity: 1;">
+                                <span class="icon-audiodescripcion ico-accesible"></span>
+                                <span class="d-none">
+                                    Audiodescripción
+                                </span>
+                            </li>
+                                                                                                    <li class="accesibilidad_bucle-magnetico" style="opacity: 1;">
+                                <span class="icon-buclemagnetico ico-accesible"></span>
+                                <span class="d-none">
+                                    Bucle magnético
+                                </span>
+                            </li>
+                                                                                                    <li class="accesibilidad_sobretitulado" style="opacity: 1;">
+                                <span class="icon-sobretitulado  ico-accesible"></span>
+                                <span class="d-none">
+                                    Sobretitulado
+                                </span>
+                            </li>
+                                                                                                    <li class="accesibilidad_sonido-amplificado" style="opacity: 1;">
+                                <span class="icon-sonidoamplificado ico-accesible"></span>
+                                <span class="d-none">
+                                    Sonido amplificado
+                                </span>
+                            </li>
+                                                                                                    <li class="accesibilidad_mochilas-vibratorias" style="opacity: 1;">
+                                <span class="icon-mochila"></span>
+                                <span class="d-none">
+                                    Mochilas vibratorias
+                                </span>
+                            </li>
+                                                                                                                        </ul>
+                                        </div>
+                </div>
+    </li>
+
+
+                        </ol>
+            <!-- Fin listado de resultados -->
+
+
+    </div>
+
+    <noscript>
+        <style>
+
+          .grid li.grid-item .infolittle {
+            opacity: 1;
+          }
+          .grid li a.imagen {
+            height: 150px;
+            overflow: hidden;
+            display: inline-block!important;
+            border: 0;
+          }
+        </style>
+    </noscript>
+    </div>
+             </main>
+
+
+{% endblock%}

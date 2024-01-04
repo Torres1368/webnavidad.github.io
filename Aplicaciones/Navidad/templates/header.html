@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ec" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Navidad Madrid</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <script src="https://estaticos.navidadmadrid.com/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://estaticos.navidadmadrid.com/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/wtp0jzs.css">
+    <link href="https://estaticos.navidadmadrid.com/css/navidad.css?v=2.13" rel="stylesheet" />
+    <link rel="stylesheet" href="static/css/estilos1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <header>
+       <div>
+         <div class="header ">
+             <div>
+             <div class="container2 cabecera_madrid ">
+             <a href="#" class="titulositio hidden-sm-down" accesskey="0" title="Ir al inicio">Programa de Navidad 2023 - 2024<em class="ayto">. Ayuntamiento de Madrid</em> </a>
+             <a aria-label="Madrid" href="https://www.madrid.es" target="_blank" title="Web del Ayuntamiento de Madrid" class="logomadrid" data-toggle="tooltip" data-placement="left">
+             <span class="icon-madrid-ayto menu-admin-icon" aria-hidden="true"></span></a>
+              </div>
+        </div>
+      </div>
+    </div>
+   <nav class="navbar navbar-expand-lg elemento_menu py-0 col-md-12 bg-primary">
+   <div class="container2 ">
+   <div class=" d-flex align-items-center justify-content-between">
+   <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+   <div class="hamburger-toggle">
+     <div class="hamburger">
+       <span></span>
+       <span></span>
+       <span></span>
+     </div>
+   </div>
+   </button>
+   <a class="claim_responsive" href="#"><span class="c1">Madrid,</span> <span class="c2">una ciudad</span> <span class="c1">con estrella</span></a>
+   </div>
+   <div class="d-flex align-items-center justify-content-between bg-primary ">
+   <div class="collapse navbar-collapse menu_top" id="navbar-content">
+   <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+     <li class="nav-item" > <a href="/" class="nav-link text-white" >Programa</a></li>
+
+   <li class="nav-item dropdown">
+   <a class="nav-link dropdown-toggle text-white" href="#" role="button"  data-bs-toggle="dropdown" data-bs-auto-close="outside">Categorías</a>
+   <ul class="dropdown-menu">
+
+      <li class="nav-item" >
+         <a href="{% url 'vistaBelenes' %}" class="nav-link" >Belenes</a>
+      </li>
+
+      <li class="nav-item" >
+         <a href="{% url 'vistaMusica' %}" class="nav-link" >Musica</a>
+      </li>
+
+
+      <li class="nav-item" >
+        <a href="{% url 'vistaJeronimos' %}" class="nav-link" >Los Jerónimos Policromados</a>
+      </li>
+
+      <li class="nav-item" >
+        <a href="{% url 'vistaMadridEstrella' %}" class="nav-link" >Madrid, una ciudad con estrella</a>
+      </li>
+
+
+
+
+      <li class="nav-item" >
+        <a href="{% url 'vistaPistaHielo' %}" class="nav-link" >Pistas de Hielo</a>
+      </li>
+
+
+      <li class="nav-item" >
+        <a href="{%url 'vistaCabalgata' %}" class="nav-link" >Cabalgata</a>
+     </li>
+    </ul>
+   </li>
+
+
+
+   <li class="nav-item dropdown">
+   <a class="nav-link dropdown-toggle text-white" href="#" role="button"  data-bs-toggle="dropdown" data-bs-auto-close="outside"> Espacios </a>
+     <ul class="dropdown-menu">
+       <li class="nav-item" >
+         <a href="{% url 'vistaCibeles' %}" class="nav-link" >Palacio de Cibeles</a>
+       </li>
+
+
+   <li class="nav-item" >
+     <a href="{% url 'vistaJardines' %}" class="nav-link" >Jardines del Cabo Noval - Plaza de Oriente</a>
+   </li>
+   <li class="nav-item" >
+     <a href="{%url 'vistaPlazaPaja'%}" class="nav-link" >Plaza de la Paja</a>
+   </li>
+
+   <li class="nav-item" >
+     <a href="{% url 'vistaBalcones' %}" class="nav-link" >Balcones del Teatro Español</a>
+   </li>
+
+   <li class="nav-item" >
+     <a href="{% url 'vistaBalconesCasa' %}" class="nav-link" >Balcones de Casa de La Panadería</a>
+   </li>
+
+   <li class="nav-item" >
+     <a href="{% url 'vistaVilla' %}" class="nav-link" >Balcón de Casa de la Villa</a>
+   </li>
+
+
+
+
+   <li class="nav-item" >
+     <a href="{% url 'vistaIglesia' %}" class="nav-link" >Real Iglesia Parroquial de San Ginés</a>
+   </li>
+
+   <li class="nav-item" >
+     <a href="{% url 'vistaMunicipales' %}" class="nav-link" >Espacios y Centros Municipales</a>
+   </li>
+
+   <li class="nav-item" >
+      <a href="{% url 'vistaDistritos' %}" class="nav-link" >Distritos</a>
+    </li>
+    </ul>
+   </li>
+
+   <li class="nav-item" >
+     <a href="#" class="nav-link text-white" >Accesibilidad</a>
+   </li>
+
+   <li class="nav-item" >
+     <a href="#" class="nav-link text-white" >Zona de prensa</a>
+   </li>
+
+   <li class="nav-item" >
+     <a href="https://tienda.madrid-destino.com/es/?cycle=119" class="nav-link text-white"  target="_blank" >Entradas</a>
+   </li>
+
+   <div class="search d-flex aling-items-center" role="search">
+    <form class='search-form d-flex'>
+     <label for="busqueda"><span class="d-none">Buscador por texto libre</span></label>
+      <input class='searchTerm' id="busqueda" placeholder='Qué quieres buscar' type='text' name="q">
+      <button class='searchButton' type="submit">
+        <span class='fas fa-search  '></span>
+      </button>
+    </form>
+  </div>
+  </div>
+          <div class="redes d-none d-lg-block">
+    <aside >
+      <ul class="redes-menu my-0 py-0 list-unstyled d-flex justify-content-ends aling-intems-center ">
+        <li class="px-2"><a href="https://twitter.com/madrid_cultura" target="_blank"><i class="fab fa-x-twitter" aria-label="Twitter"></i><span class="d-none">Twitter</span></a></li>
+        <li class="px-2"><a href="https://www.instagram.com/_madridcultura/" target="_blank"><i class="fab fa-instagram" aria-label="Instagram"></i><span class="d-none">Instagram</span></a></li>
+        <li class="px-2"><a href="https://www.facebook.com/madridcultura" target="_blank"><i class="fab fa-facebook" aria-label="Facebook"></i><span class="d-none">Facebook</span></a></li>
+        <li class="ps-2"><a href="https://vimeo.com/madriddestino" target="_blank"><i class="fab fa-vimeo" aria-label="Vimeo"></i><span class="d-none">Vimeo</span></a></li>
+      </ul>
+    </aside>
+    </div>
+    </div>
+    <div class="banner4 d-none d-md-block">
+      <div class="container2 flexbanner">
+          <div class="redes d-none d-md-block">
+      </div>
+      <div class="centrado claim">
+          <div class="d-flex flex-column justify-content-between align-content-center ">
+  						<div class="text-center">
+                <span class="c1">Madrid,</span> <span class="c2">una ciudad</span> <span class="c1 c1a">con estrella</span>
+  					  </div>
+  		   </div>
+       </div>
+
+    <div class="idiomas d-none d-md-block" >
+      <ul class="d-flex flex-column ">
+        <li ><span class="active">Español</span></li>
+  			<li><a href="" title="Cambiar a inglés">English</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+</nav>
+
+
+
+{% block contenido %}
+{% endblock %}
+
+
+
+
+
+
+<footer class="footer1">
+  <div class="footerprevio">
+    <div class="container2">
+      <div class="row">
+        <div class="col-12">
+          <p class="cambios text-center mb-0 pb-0">
+             Programación sujeta a cambios
+          </p>
+
+          <nav aria-label="Enlaces transversales">
+            <ul class="nav transversal mb-0 pb-0">
+              <li class="nav-item"><a href="#" class="nav-link">Mapa</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Resumen de eventos</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <aside class="footerLogos">
+      <div class="container2 pt-md-4 pb-md-4 pt-sm-2 mx-auto logosfooter">
+        <div class="row">
+          <div class="col-lg-12 ">
+            <div class="d-flex flex-wrap justify-content-between">
+              <div class="patrocinadores">
+                <p class="text-center mb-0 pb-0">patrocinadores</p>
+                <div class="">
+                  <div class="">
+                    <ul class="list-unstyled fila1 mb-0 pb-0">
+     <li>
+       <a href="https://www.amazon.es/lafabricadelanavidad" target="_blank">
+           <img src="https://estaticos.navidadmadrid.com/images/logos/v22/amazon.svg" id="logo" alt="amazon.es">
+       </a>
+     </li>
+     <li>
+       <a href="https://www.youtube.com/channel/UCx5qQgFaVBfJJaw5hbE_MrA" target="_blank">
+         <img src="https://estaticos.navidadmadrid.com/images/logos/v22/djunior_movistar.svg" id="logo" alt="Disney Junior, Movistar+">
+       </a>
+     </li>
+     <li>
+       <a href="https://www.elcorteingles.es/" target="_blank">
+         <img src="https://estaticos.navidadmadrid.com/images/logos/logo_eci_2.svg" id="logo" alt="El Corte Inglés">
+       </a>
+     </li>
+      <li>
+       <a href="https://circlassica.es//" target="_blank">
+         <img src="https://estaticos.navidadmadrid.com/images/logos/psonrisas.png" id="logo" alt="Productores de Sonrisas">
+       </a>
+     </li>
+
+     <li>
+       <a href="https://www.urbaser.com/" target="_blank">
+         <img src="https://estaticos.navidadmadrid.com/images/logos/urbaser_v3.svg" id="logo" alt="urbaser">
+       </a>
+     </li>
+   </ul>
+ </div>
+</div>
+</div>
+<div class="colaboradores">
+               <p class="textop mb-0 pb-0">colaborador institucional</p>
+               <ul class="list-unstyled mb-0 pb-0">
+                 <li>
+                   <a href="https://www.ceu.es" target="_blank">
+                     <img src="https://estaticos.navidadmadrid.com/images/logos/ceu.svg" alt="ceu" id="logo">
+                   </a>
+                 </li>
+               </ul>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </aside>
+ </div>
+
+ <div class="footer02">
+   <div class="footer_madrid">
+     <div class="container2">
+       <div class="datosfooter ">
+         <div class="ayto px-2">
+
+           <a href="#" target="_blank">
+             MADRID DESTINO CULTURA TURISMO Y NEGOCIO, S.A. 2023
+           </a>
+           . Algunos derechos reservados
+         </div>
+         <nav aria-label="Pie">
+           <ul class="nav">
+             <li class="nav-item"><a href="#" class="nav-link">Política de cookies</a></li>
+             <li class="nav-item"><a href="#" class="nav-link">Aviso legal</a></li>
+             <li class="nav-item"><a href="#" class="nav-link">Accesibilidad web</a></li>
+           </ul>
+         </nav>
+       </div>
+
+       <div class="redes pt-3 pb-3 d-block d-sm-none">
+         <ul class="list-unstyled d-flex justify-content-center align-content-center px-0 ">
+           <li class="px-2"><a href="https://twitter.com/madrid_cultura" target="_blank">X</a></li>
+           <li class="px-2"><a href="https://www.facebook.com/madridcultura" target="_blank">Facebook</a></li>
+           <li class="px-2"><a href="https://www.instagram.com/_madridcultura/" target="_blank">Instagram</a></li>
+           <li class="px-2"><a href="https://vimeo.com/madriddestino" target="_blank">Vimeo</a></li>
+         </ul>
+       </div>
+     </div>
+   </div>
+
+   <a href="../#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+     <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+
+   </a>
+ </div>
+</footer>
+
+
+</div>
+
+</div>
+
+</body>
+
+</html>

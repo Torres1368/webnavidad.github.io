@@ -1,0 +1,70 @@
+{% extends "./header.html" %}
+{% load static %}
+
+{% block contenido %}
+<link rel="stylesheet" href="{% static 'css/estilos1.css' %}">
+
+  <body>
+    <h1 class="fw-bold">Plaza de la Paja</h1>
+    <br>
+    <h3 class="text-warning fw-bold">Musica en la ciudad</h3>
+    <br>
+    <p>La Navidad llena calles, plazas y balcones de jazz, góspel, flamenco y otros géneros conectados con la espiritualidad. Los artistas ofrecen repertorios especiales que nos conectan con el espíritu de celebración y comunión de estas fiestas. Además, en esta epifanía que dedicamos a los mayores, un coro de voces blancas recorre la ciudad para honrar a esos abuelos que, con su sabiduría y generosidad están siempre para los demás.</p>
+    <br>
+    <div class="d-flex">
+      <button class="btn btn-outline-primary mx-2" onclick="window.location.href='pagina3.html'">Vista Completa</button>
+      <button class="btn btn-outline-primary mx-2" onclick="window.location.href='https://www.navidadmadrid.com/es/categoria/plaza-de-la-paja#'">Vista Listado</button>
+
+      </div>
+   <br>
+      <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/plaza3.jpg" class="card-img-top" alt="Imagen 1">
+            <div class="card-body">
+              <a href="https://www.navidadmadrid.com/es/evento/izo-fitzroy">
+              <h4>Izo FitzRoy</h4>
+              </a>
+              <p class="card-text">Viernes 29 de diciembre, 20h</p>
+              <p class="text-danger"class="card-text">Finalizado</p>
+              <p class="fw-bold"class="card-text">Plaza de la Paja</p>
+              <p class="text-primary"class="card-text">MÚSICA</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/plaza1.jpg" class="card-img-top" alt="Imagen 2">
+            <div class="card-body">
+              <a href="https://www.navidadmadrid.com/es/evento/yerbabuena-la-casa-gitan">
+              <h4>Yerbabuena - La Casa Gitana</h4>
+              </a>
+              <p class="card-text">Zambomba flamenca-gitana</p>
+              <p class="card-text">Sábado 30 de diciembre, 12h</p>
+              <p class="text-danger"class="card-text">Finalizado</p>
+              <p class="fw-bold"class="card-text">Plaza de la Paja</p>
+              <p class="text-primary"class="card-text">MÚSICA</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/plaza2.jpg" class="card-img-top" alt="Imagen 3">
+            <div class="card-body">
+              <a href="https://www.navidadmadrid.com/es/evento/swing-engine-street-sextet">
+              <h4>Swing Engine Street Sextet</h4>
+              </a>
+              <p class="card-text">Sábado 30 de diciembre, 20h</p>
+              <p class="text-danger"class="card-text">Finalizado</p>
+              <p class="fw-bold"class="card-text">Plaza de la Paja</p>
+              <br>
+              <p class="text-primary"class="card-text">MÚSICA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+{% endblock %}

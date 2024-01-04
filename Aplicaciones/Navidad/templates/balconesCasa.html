@@ -1,0 +1,34 @@
+{% extends "./header.html" %}
+{% load static %}
+
+{% block contenido %}
+<link rel="stylesheet" href="{% static 'css/estilos1.css' %}">
+
+</nav>
+  <body>
+    <h1 class="fw-bold">Desde los balcones de Casa de la Panaderia</h1>
+    <br>
+    <h3 class="text-warning fw-bold">Musica en la ciudad</h3>
+    <br>
+    <p>La Navidad llena calles, plazas y balcones de jazz, góspel, flamenco y otros géneros conectados con la espiritualidad. Los artistas ofrecen repertorios especiales que nos conectan con el espíritu de celebración y comunión de estas fiestas. Además, en esta epifanía que dedicamos a los mayores, un coro de voces blancas recorre la ciudad para honrar a esos abuelos que, con su sabiduría y generosidad están siempre para los demás.</p>
+    <br>
+    <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'img/panaderia1.jpg' %}" class="card-img-top" alt="Imagen 1">
+
+          <div class="card-body">
+            <a href="https://www.navidadmadrid.com/es/evento/coro-de-jovenes-de-madrid">
+            <h4 class="text-primary">Coro de Jóvenes de Madrid</h4>
+            </a>
+            <p class="card-text">Martes 26 de diciembre, 20h</p>
+            <p class="text-danger"class="card-text">Finalizado</p>
+            <p class="fw-bold"class="card-text">Casa de La Panadería - Plaza Mayor</p>
+            <br>
+            <p class="text-primary"class="card-text">MÚSICA</p>
+          </div>
+        </div>
+      </div>
+  </body>
+{% endblock %}

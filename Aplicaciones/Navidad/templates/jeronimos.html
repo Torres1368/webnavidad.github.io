@@ -1,0 +1,60 @@
+{% extends "./header.html" %}
+{% load static %}
+
+{% block contenido %}
+<link rel="stylesheet" href="{% static 'css/estilos1.css' %}">
+
+<div class="p-4">
+
+
+<h2 class="px-3">Los Jerónimos Policromados</h2>
+<div class="px-3">
+  <p class="text-justify">San Jerónimo el Real se convierte en un quimérico fresco policromático con la intervención del artista lumínico francés Patrice Warrener, una instalación que se completa el día 23 con los conciertos del Coro de Voces Graves de Madrid, dirigido por Juan Pablo de Juan.</p>
+
+</div>
+<div class="texto-derecha ">
+  <a class="btn btn-primary" href="?reload=true">Vista Completa</a>
+  <a class="btn btn-outline-dark" href="?reload=true">Vista listado</a>
+
+</div>
+</div>
+
+
+<div class="row p-3 items-center bg-ligt  ">
+  <div class="col-md-4 efecto-imagen rounded p-4">
+    <div class="col-md-12 mx-auto fondo1 borde-negro rounded">
+      <a href="#"><img class="imagenes rounded" src="{% static 'img/jer1.png' %}" alt=""></a>
+      <h4 class=" m-0 p-4 text-primary" >Los Jerónimos Policromados</h4>
+      <p class=" m-0 px-4">Del 21 al 23 de diciembre, de 18 a 24 h</p>
+      <h9 class="px-4 text-danger">Finalizado </h9>
+      <p class="m-0 p-4">Parroquia de San Jerónimo El Real </p>
+      <p class="text-primary  letra-chica  px-4">LOS JERÓNIMOS POLICROMADOS</p>
+    </div>
+  </div>
+
+  <div class="col-md-4 efecto-imagen rounded p-4">
+    <div class="col-md-12 mx-auto fondo1 borde-negro rounded">
+      <a href="#"><img class="imagenes rounded" src="{% static 'img/jer2.png' %}" alt=""></a>
+      <h4 class=" m-0 p-4 text-primary" >Coro de Voces Graves de Madrid</h4>
+      <p class=" m-0 px-4">23 de diciembre. Conciertos: 18.30, 20 y 21 h</p>
+      <h9 class="px-4 text-danger">Finalizado </h9>
+      <p class="m-0 p-4">Parroquia de San Jerónimo El Real  </p>
+      <p class="text-primary letra-chica px-4">LOS JERÓNIMOS POLICROMADOS</p>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

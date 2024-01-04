@@ -1,0 +1,109 @@
+{% extends "./header.html" %}
+{% load static %}
+
+{% block contenido %}
+
+<link rel="stylesheet" href="{% static 'css/estilos1.css' %}">
+<body>
+
+<h1 class="text-primary mt-5">Madrid, una ciudad con estrella</h1>
+<p class="text-justify">La estrella de Belén fue la señal inesperada y necesaria para anunciar el nacimiento del Niño Jesús a los Reyes Magos y guiarlos hasta el lugar donde ocurrió el milagro. Este año, la estrella de Belén llega a nuestro cielo para acercar las Fiestas a los madrileños y visitantes: sus vértices iluminarán los cuatro puntos cardinales y su estela estará presente —en forma de luminosas instalaciones artísticas— en cinco distritos de la ciudad. Además, esta Navidad, en Madrid queremos rendir homenaje a nuestros mayores, a quienes con atención, sabiduría y generosidad se entregan a las nuevas generaciones, como bien refleja el acto simbólico del regalo.</p>
+
+<div class="">
+  <button class="btn btn-outline-primary mx-2 texto-derecha" onclick="#">Vista Completa</button>
+  <button class="btn btn-outline-primary mx-2 texto-derecha" onclick="#">Vista Listado</button>
+</div>
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="{% static 'img/madrid1.jpg' %}" class="card-img-top" alt="Imagen 1">
+
+        <div class="card-body">
+          <a href="https://www.navidadmadrid.com/es/evento/borealis">
+          <h4>Borealis</h4>
+          </a>
+          <p class="card-text">Del 15 al 22 de diciembre, de 19 a 23 h</p>
+          <p class="text-danger"class="card-text">Finalizado</p>
+          <p class="fw-bold"class="card-text">Centro de Cultura Contemporánea Condeduque - Patio Central</p>
+          <p class="text-primary"class="card-text">MADRID, UNA CIUDAD CON ESTRELLA</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="{% static 'img/madrid2.jpg' %}" class="card-img-top" alt="Imagen 2">
+        <div class="card-body">
+          <a href="https://www.navidadmadrid.com/es/evento/dulces-navidenos">
+          <h4>Dulces Navideños</h4>
+          </a>
+          <p class="card-text">Del 15 al 29 de diciembre, de 11 a 22 h</p>
+          <p class="text-danger"class="card-text">Finalizado</p>
+          <p class="fw-bold"class="card-text">Plaza de Cristina Arce y Rocío Oña</p>
+          <p class="text-primary"class="card-text">MADRID, UNA CIUDAD CON ESTRELLA</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="{% static 'img/madrid3.jpg' %}" class="card-img-top" alt="Imagen 3">
+        <div class="card-body">
+          <a href="https://www.navidadmadrid.com/es/evento/el-regalo">
+          <h4>El Regalo</h4>
+          </a>
+          <p class="card-text">Del 15 al 29 de diciembre, de 11 a 23 h</p>
+          <p class="text-danger"class="card-text">Finalizado</p>
+          <p class="fw-bold"class="card-text">Azca</p>
+          <p class="text-primary"class="card-text">MADRID, UNA CIUDAD CON ESTRELLA</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="" class="card-img-top" alt="">
+        <div class="card-body">
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="{% static 'img/madrid4.jpg' %}" class="card-img-top" alt="Imagen 5">
+        <div class="card-body">
+          <a href="https://www.navidadmadrid.com/es/evento/feliz-navidad">
+          <h4>Feliz Navidad</h4>
+          </a>
+          <p class="card-text">Del 15 al 22 de diciembre, de 11 a 23 h</p>
+          <p class="text-danger"class="card-text">Finalizado</p>
+          <p class="fw-bold"class="card-text">Madrid Rio</p>
+          <p class="text-primary"class="card-text">MADRID, UNA CIUDAD CON ESTRELLA</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="{% static 'img/madrid5.jpeg' %}" class="card-img-top" alt="Imagen 5">
+        <div class="card-body">
+          <a href="https://www.navidadmadrid.com/es/evento/la-bola-de-nieve">
+          <h4>La Bola de Nieve</h4>
+          </a>
+          <p class="card-text">Del 15 al 29 de diciembre, de 11 a 22 h</p>
+          <p class="text-danger" class="card-text">Finalizado</p>
+          <p class="fw-bold"class="card-text">Plaza de Carabanchel</p>
+          <p class="text-primary" class="card-text">MADRID, UNA CIUDAD CON ESTRELLA</p>
+        </div>
+  </div>
+</div>
+
+</body>
+
+{% endblock %}

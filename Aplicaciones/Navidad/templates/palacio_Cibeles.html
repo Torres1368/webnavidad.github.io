@@ -1,0 +1,54 @@
+{% extends "./header.html" %}
+{% load static %}
+
+{% block contenido %}
+<link rel="stylesheet" href="{% static 'css/estilos1.css' %}">
+
+<div class="p-3">
+
+
+<h2 class="px-3">Palacio de Cibeles</h2>
+<div class="texto-derecha ">
+  <a class="btn btn-primary texto-derecha" href="?reload=true">Vista Completa</a>
+  <a class="btn btn-outline-dark texto-derecha" href="?reload=true">Vista listado</a>
+
+</div>
+
+
+</div>
+
+
+<div class="row p-3 items-center bg-ligt justify-content-center ">
+  <div class="col-md-4 efecto-imagen rounded p-4">
+    <div class="col-md-12 mx-auto fondo1 borde-negro rounded">
+      <a href="#"><img class="imagenes rounded" src="{% static 'img/pala1.png' %}" alt=""></a>
+      <h4 class=" m-0 p-4 text-primary" >Belén del Ayuntamiento </h4>
+      <p class=" m-0 p-4">Del 23 de noviembre al 5 de enero</p>
+      <p class="m-0 p-4">CentroCentro - Patio de Operaciones </p>
+      <h9 class="text-primary px-4">BELENES</h9>
+    </div>
+  </div>
+
+  <div class="col-md-4 efecto-imagen rounded p-4">
+    <div class="col-md-12 mx-auto fondo1 borde-negro rounded">
+      <a href="#"><img class="imagenes rounded" src="{% static 'img/pala2.png' %}" alt=""></a>
+      <h4 class=" m-0 p-4 text-primary" > Amazon & Cibeles sobre hielo</h4>
+      <p class=" m-0 p-4">Del 16 de diciembre al 5 de enero</p>
+      <p class="m-0 p-4">CentroCentro - Patio de Operaciones </p>
+      <h9 class="text-primary px-4">PISTAS DE HIELO</h9>
+    </div>
+  </div>
+
+  <div class="col-md-4 efecto-imagen rounded p-4">
+    <div class="col-md-12 mx-auto fondo1  borde-negro rounded">
+      <a href="#"><img class="imagenes rounded" src="{% static 'img/pala3.png' %}" alt=""></a>
+      <h4 class=" m-0 p-4 text-primary" > Los Distritos cantan</h4>
+      <p class=" m-0 p-4">Del 21 de diciembre al 4 de enero</p>
+      <p class="m-0 p-4">CentroCentro - Patio de Operaciones </p>
+      <h9 class="text-primary px-4">Musica</h9>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

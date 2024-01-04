@@ -1,0 +1,48 @@
+.imagenes {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 2px solid #EEF5FF;
+
+
+}
+
+.fondo1{
+  background-color: #F4EEE0;
+}
+
+.borde-negro{
+ border: 1px solid #ccc;
+}
+
+.efecto-imagen:hover img {
+  transition: transform 0.5s ease;
+}
+
+p {
+  text-align: justify;
+}
+
+.letra-chica {
+  font-size: 6px;
+}
+
+.texto-derecha {
+  text-align: right;
+  font-weight: bold;
+
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+.footer1 {
+  background-image: url('../img/img1.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  color: #ffffff;
+  margin: 0;
+  padding-top: 120px;
+}

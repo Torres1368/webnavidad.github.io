@@ -1,0 +1,116 @@
+{% extends "./header.html" %}
+{% load static %}
+
+{%block contenido%}
+
+<link rel="stylesheet" href="{% static 'css/estilos1.css' %}">
+
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to=""></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to=""></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to=""></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="static/img/img7.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="static/img/img11.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="static/img/img7.jpg" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="static/img/img9.jpg" alt="four slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="static/img/img10.jpg" alt="four slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="static/img/img12.jpg" alt="four slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+<div class="row p-3 items-center bg-primary justify-content-center">
+  <div class="col-md-3 text-center efecto-imagen rounded">
+    <div class="col-md-12 mx-auto bg-light rounded">
+      <a href="#"><img class="imagenes rounded" src="static/img/slider1.jpg" alt=""></a>
+      <p class="text-center m-0 p-4">Belenes</p>
+    </div>
+  </div>
+
+  <div class="col-md-3 text-center efecto-imagen rounded">
+    <div class="col-md-12 mx-auto bg-light rounded">
+      <a href="#"><img class="imagenes rounded" src="static/img/slider2.jpg" alt=""></a>
+      <p class="text-center m-0 p-4">Belenes</p>
+    </div>
+  </div>
+
+  <div class="col-md-3 text-center efecto-imagen rounded">
+    <div class="col-md-12 mx-auto bg-light rounded">
+      <a href="#"><img class="imagenes rounded" src="static/img/slider3.jpg" alt=""></a>
+      <p class="text-center m-0 p-4">Belenes</p>
+    </div>
+  </div>
+</div>
+
+<div class="p-5">
+  <h1 class="home px-5 text-justify" >La estrella de la Navidad visita Madrid</h1>
+  <div class="px-5">
+    <p class="text-justify" >Bajo el resplandor de la estrella de Bel&eacute;n, s&iacute;mbolo de todo lo que representa la Navidad, nuestra capital se lanza un a&ntilde;o m&aacute;s a celebrar esta fiesta tan m&aacute;gica y tan ic&oacute;nica de Madrid.</p>
+
+    <p class="class="text-justify">En efecto, son d&iacute;as para estar en familia, d&iacute;as de celebraci&oacute;n jubilosa y de alegr&iacute;a contenida (o incontenida, como cada uno prefiera); d&iacute;as que simbolizan que, incluso en la jornada con menos luz solar del a&ntilde;o, una nueva esperanza para el mundo y para cada uno de nosotros puede nacer donde uno menos se lo espera.</p>
+
+    <p class="class="text-justify">Y, por supuesto, fiel a la m&aacute;s gozosa de sus tradiciones, el Ayuntamiento se ha involucrado un a&ntilde;o m&aacute;s en cuerpo y alma a la hora de adornar la ciudad como la ocasi&oacute;n merece, adem&aacute;s de, por supuesto, acompa&ntilde;ar las fiestas con una programaci&oacute;n en la que hemos intentado elevar el list&oacute;n del &eacute;xito del a&ntilde;o pasado.</p>
+
+    <p class="class="text-justify">Empezar&eacute; mi personal repaso de los puntos &aacute;lgidos de la programaci&oacute;n de Navidad del Ayuntamiento precisamente en la sede de &eacute;ste: el bel&eacute;n del Consistorio en el Palacio de Cibeles ocupar&aacute; como en 2022 el Patio de Operaciones en CentroCentro. Tambi&eacute;n quiero llamar la atenci&oacute;n sobre el espect&aacute;culo de luz que Patrice Warrener realizar&aacute; a partir del 21 de diciembre en la fachada de San Jer&oacute;nimo el Real. Importante tambi&eacute;n: Matadero ser&aacute; escenario de Madrid, Navidad de Encuentro y este a&ntilde;o el pa&iacute;s invitado es Estados Unidos. Por &uacute;ltimo, dentro de la programaci&oacute;n musical destacar&eacute; Los Distritos cantan del 21 de diciembre al 4 de enero, conciertos en los que participar&aacute;n las agrupaciones corales de los distritos de nuestra ciudad.</p>
+
+    <p class="class="text-justify">Pero sin duda el momento m&aacute;s inolvidable ser&aacute;, un a&ntilde;o m&aacute;s, la Cabalgata de los Reyes Magos, momento en el que Madrid dar&aacute; el do de pecho de su Navidad particular. Este a&ntilde;o se cumplen 70 a&ntilde;os desde que la Cabalgata cont&oacute; con el apoyo decidido del Ayuntamiento de Madrid por primera vez. En 1953 fueron unas nada despreciables 50.000 pesetas y, aunque ahora contemos el dinero en euros y no en pesetas, hay una cosa que no ha cambiado: el compromiso para deslumbrar a los m&aacute;s peque&ntilde;os entre los madrile&ntilde;os con una entrada triunfal espectacular de Sus Majestades de Oriente; Melchor, Gaspar y Baltasar. Esto ni ha cambiado en 70 a&ntilde;os y ni va a cambiar nunca.</p>
+
+    <p class="">&nbsp;Feliz Navidad, Madrid.</p>
+
+    <div class="texto-derecha">
+        <p class="texto-derecha">José Luis Martínez-Almeida </p>
+          <p class="texto-derecha text-primary">Alcalde de Madrid</p>
+      </div>
+</div>
+
+    </div>
+
+    <div class="row bg-primary text-center p-3">
+      <div  class="col-md-8 text-left px-4 ml-3 p-5">
+        <h1 class="text-white">Descárgate el cartel</h1>
+        <p class="text-white pb-3" style="text-align: justify; text-justify: inter-word;">El Área de Cultura, Turismo y Deporte del Ayuntamiento de Madrid facilita la descarga del cartel oficial de la campaña de Navidad 2023 - 2024 creado por Polinho Trapalleiro.</p>
+     <p class="text-white" style="text-align: justify; text-justify: inter-word;">Descarga autorizada solo para uso doméstico. Cualquier otro uso sujeto a autorización. © MADRID DESTINO CULTURA TURISMO Y NEGOCIO, S.A., 2023</p>
+   </div>
+
+      <div class="col-md-4 p-3">
+        <a href="#"><img width="150px" height="auto" src="static/img/img2.jpg" alt=""></a>
+
+        <a href="#"> <p class="text-white text-justify">Descargar <span>(655.6kb)</span></p></a>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+{% endblock%}

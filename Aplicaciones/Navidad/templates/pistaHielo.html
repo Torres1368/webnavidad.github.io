@@ -1,0 +1,50 @@
+{% extends "./header.html" %}
+{% load static %}
+
+{% block contenido %}
+<link rel="stylesheet" href="{% static 'css/estilos1.css' %}">
+
+  <body>
+    <h1 class="fw-bold">Pistas de hielo</h1>
+    <div class="d-flex">
+      <button class="btn btn-outline-primary mx-2" onclick="window.location.href='pagina2.html'">Vista Completa</button>
+      <button class="btn btn-outline-primary mx-2" onclick="window.location.href='https://www.navidadmadrid.com/es/categoria/pistas-de-hielo'">Vista Listado</button>
+      </div>
+    <br>
+    <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'img/Pista1.jpg' %}" class="card-img-top" alt="Imagen 1">
+
+          <div class="card-body">
+            <a href="https://www.navidadmadrid.com/es/evento/madrid-navidad-de-encuentro/pista-de-hielo-matadero">
+            <h4>Pista de hielo Matadero</h4>
+            </a>
+            <p class="card-text">Del 6 de diciembre al 7 de enero</p>
+            <p class="fw-bold"class="card-text">Matadero Madrid</p>
+            <p class="text-primary"class="card-text">MADRID, NAVIDAD DE ENCUENTRO</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'img/Pista2.jpg' %}" class="card-img-top" alt="Imagen 2">
+          <div class="card-body">
+            <a href="https://www.navidadmadrid.com/es/evento/amazon-cibeles-sobre-hielo">
+            <h4>Amazon & Cibeles sobre hielo</h4>
+            </a>
+            <p class="card-text">Del 16 de diciembre al 5 de enero</p>
+            <p class="fw-bold"class="card-text">CentroCentro - Acceso por C/ Montalbán, 1. Galería de Cristal</p>
+            <p class="text-primary"class="card-text">PISTAS DE HIELO</p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  </body>
+{% endblock %}
